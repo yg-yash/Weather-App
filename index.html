@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Weather API App</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col text-center mt-5 mx-auto">
+          <h1>Weather APP</h1>
+          <p>Add Details To Get Weather Details</p>
+          <form>
+            <input
+              type="text"
+              class="form-group"
+              id="inputField"
+              placeholder="Enter City"
+              required
+            />
+            <select class="form-group" name="temp" id="temp">
+              <option value="C">C</option>
+              <option value="F">F</option>
+            </select>
+            <br />
+            <input
+              type="button"
+              id="btn"
+              value="Submit"
+              onclick="showWeather()"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- show data -->
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-md-8 text-center mx-auto show"></div>
+      </div>
+    </div>
+
+    <footer class="footer fixed-bottom bg-dark text-center">
+      <p class="text-white py-2">&copy; Weather Forecast</p>
+    </footer>
+  </body>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <script src="weather.js"></script>
+  <script src="main.js"></script>
+</html>
